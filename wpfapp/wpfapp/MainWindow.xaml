@@ -1,0 +1,16 @@
+﻿<Window x:Class="wpfapp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpfapp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="Names" HorizontalAlignment="Left" Height="30" Margin="20,35,0,0" VerticalAlignment="Top" Width="79" FontSize="18"/>
+        <ListBox x:Name="listNames" HorizontalAlignment="Left" Height="241" Margin="20,70,0,0" VerticalAlignment="Top" Width="270" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+        <TextBox x:Name="textName" HorizontalAlignment="Left" Height="21" Margin="446,70,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="214"/>
+        <Button x:Name="addName" Content="Add Name" HorizontalAlignment="Left" Height="24" Margin="446,96,0,0" VerticalAlignment="Top" Width="214" Click="ButtonAddName_Click"/>
+
+    </Grid>
+</Window>
